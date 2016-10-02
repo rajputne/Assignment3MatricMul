@@ -15,11 +15,7 @@ import org.apache.hadoop.mapred.Mapper;
 import org.apache.hadoop.mapred.OutputCollector;
 import org.apache.hadoop.mapred.Reporter;
 
-/**
- * Mapper that takes a line from an Apache access log and emits the IP with a
- * count of 1. This can be used to count the number of times that a host has hit
- * a website.
- */
+
 public class MatrixMapper extends MapReduceBase
         implements Mapper<LongWritable, Text, Text, Text> {
 

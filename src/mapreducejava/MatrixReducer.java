@@ -10,9 +10,6 @@ import org.apache.hadoop.mapred.OutputCollector;
 import org.apache.hadoop.mapred.Reducer;
 import org.apache.hadoop.mapred.Reporter;
 
-/**
- * Counts all of the hits for an ip. Outputs all ip's
- */
 public class MatrixReducer extends MapReduceBase implements Reducer<Text, Text, Text, IntWritable> {
 
     public void reduce(Text key, Iterator<Text> values,
